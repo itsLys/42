@@ -1,13 +1,12 @@
-// void *memcpy(void dest[restrict .n], const void src[restrict .n],size_t n);
+#include "libft.h"
 
-#include <string.h>
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char		*dp;
-	const char	*sp;
+	unsigned char		*dp;
+	const unsigned char	*sp;
 
-	dp = (char *) dest;
-	sp = (const char *) src;
+	dp = (unsigned char *) dest;
+	sp = (const unsigned char *) src;
 	while (n--)
 		*(dp++) = *(sp++);
 	return (dest);
